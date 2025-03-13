@@ -1,6 +1,7 @@
 /* Manuel Dura          ID: 913644789             Homework: typesetting  */
 
-/* remove this comment to add @import font or CSS variables at the top of this file */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -92,22 +93,20 @@ a:active {
   background-color: lightblue;
 }
 
-/*
-a[href^="http://"], a[href^="https://"] {
-  position: relative;
-}
-*/
 
 a[href^="http://"]::after, a[href^="https://"]::after {
-  width: 5px !important;
-  height: 5px !important;
-  font-size: 5em;
-  font-weight: 5em;
+  
   position: relative;
-  content: url("external-link-52.png");
-  font-size: 5px !important;
-  font-weight: 5px !important;
-}
+  content: " ";
+  display: inline-block;
+  width: 1em !important;
+  height: 1em !important;
+  margin-left: 0.25em;
+  background-size: 100%;
+  background-image: url("external-link-52.png");
+  /*background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewbox='0 0 12.2 12.2' width='14' height='14'%3E%3Cpath d='M5.7 0v1.5h4L4.5 6.7l1 1.1 5.3-5.2v3.9h1.4V0z'/%3E%3Cpath fill='none' d='M3.4 6.7l3-2.9H1.5v7h7V5.9l-3 2.9z'/%3E%3Cpath d='M8.5 5.9v4.9h-7v-7h4.9l1.5-1.6H0v10h10V4.4z'/%3E%3C/svg%3E");
+ */
+  }
 
 ul, ol, dl {
   line-height: 1.2em;
