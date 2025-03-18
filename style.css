@@ -52,10 +52,12 @@ html {
 }
 
 body{
+  font-family: "lato",  sans-serif;
   font-size: 15px;
   line-height: 1.4 * 10px;
   letter-spacing: 0.12em * 10px;
   word-spacing: 0.16em * 10px ;
+  background-color:bisque;
 }
 
 header {
@@ -121,11 +123,24 @@ li {
 
 ul:last-child li  {
   list-style-type: none;
-  padding: 5px;
-  width: 100%;
-  padding: 10px;
-  border-bottom: 1px solid beige;
-  text-align: center;
-  background-color: beige;
-
+  /*border-bottom: 1px solid beige;*/
 }
+  
+nav a:last-child {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: beige;
+  padding: 15px 15px;
+  text-align: center;
+  padding-block: auto;
+  border-radius: 50%;
+}
+
+
+
+
+
+
